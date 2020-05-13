@@ -3,8 +3,12 @@ kind: Ingress
 metadata:
   name: arcadia-ingress
 spec:
+  tls:
+  - hosts:
+    - emea.f5se.com
+    secretName: f5sesecret-tls
   rules:
-  - host: k8s.arcadia-finance.io
+  - host:
     http:
       paths:
       - path: /
