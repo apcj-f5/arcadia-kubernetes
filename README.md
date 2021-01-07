@@ -2,4 +2,4 @@
 
 K8S NGINX Plus Ingress controller 
 
-K8S Arcadia deplpyment files
+K8S Arcadia deplpyment files 
