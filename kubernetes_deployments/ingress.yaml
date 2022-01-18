@@ -1,0 +1,25 @@
+spec:
+  tls:
+    - hosts:
+        - '*.emea.f5se.com'
+      secretName: f5sesecret-tls
+  rules:
+    - host: '*.emea.f5se.com'
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: main
+              servicePort: 80
+          - path: /files
+            backend:
+              serviceName: backend
+              servicePort: 80
+          - path: /api
+            backend:
+              serviceName: app2
+              servicePort: 80
+          - path: /app3
+            backend:
+              serviceName: app3
+              servicePort: 80
