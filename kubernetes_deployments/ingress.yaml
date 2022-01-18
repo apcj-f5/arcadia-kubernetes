@@ -1,3 +1,7 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: arcadia
 spec:
   tls:
     - hosts:
